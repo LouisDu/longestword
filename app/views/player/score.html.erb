@@ -1,0 +1,15 @@
+puts "******************** Now your result *********************"
+
+<h4>@result[:message]</h4>
+
+<p>Here is your score of the guess: <%=@result[:score]%> </p>
+<p>Here is the translation: <%=@result[:translation]%> </p>
+<p>You took: <%=@result[:time]%> </p>
+
+<p>Here are your global stats:
+  <ul>
+    <li>You played: <%=@session[:number_of_games]%> games</li>
+    <li>Your average score: <%=@session[:average_score]%></li>
+</p>
+
+<%= link_to 'Play again!', /game %>
